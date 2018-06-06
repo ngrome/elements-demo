@@ -1,6 +1,20 @@
 # BeerList
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+
+Demo
+[Demo](https://ngrome.github.io/elements-demo/) 
+
+Slides
+ *Cooming soon
+
+This is a simple case study about the angular elements.
+
+Some documentation:
+[Official Angular Docs](https://angular.io/guide/elements)
+[Angular 6 News](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
+[Pascal Precht Slides](http://pascalprecht.github.io/slides/angular-elements/#/67)
+[Some Code](https://github.com/fiyazbinhasan/Angular-Elements)
+[Article about angular elements](https://nitayneeman.com/posts/building-a-custom-element-using-angular-elements/)
 
 ## Development server
 

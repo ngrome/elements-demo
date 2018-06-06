@@ -1,13 +1,14 @@
 # BeerList
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
-#Demo
+# Demo
 [You can see the demo here](https://ngrome.github.io/elements-demo/) 
 
-#Slides
+# Slides
 
  *Cooming soon
 
+# Description
 This is a simple case study about the angular elements.
 
 Some documentation:

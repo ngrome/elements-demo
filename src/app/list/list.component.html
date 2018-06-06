@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<ul class="beer-list">
+  <li *ngFor="let beer of beerList;">
+    <header>
+      <h1>{{beer.name}}</h1>
+    </header>
+    <content>
+      <media>
+        <img src="{{beer.image_url}}">
+      </media>
+      <span class="alcool">{{beer.abv}}</span>
+      <p class="description">{{beer.description}}</p>
+      <div class="suggestion">
+        <li *ngFor="let food_pairing of beer.food_pairing;">
+          {{food_pairing}}
+        </li>
+      </div>
+    </content>
+  </li>
+</ul>
+<div class="beer-list">
+  <button (click)="onGiveMeABeer()">Give me a beer!</button>
+</div>

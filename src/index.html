@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>BeerList</title>
-  <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
+<body id="page-top">
+
+    <app-beer-list title="Do you want a beer?"></app-beer-list>
+
+    <script>
+      const button = document.querySelector('app-beer-list');
+      button.addEventListener('action', (event) => {
+        console.log(`"action" emitted: ${event.detail}`);
+      });
+    </script>
 </body>
 </html>

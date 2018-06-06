@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BeerList</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="dist/beer-list/runtime.js"></script>
+  <script src="dist/beer-list/polyfills.js"></script>
+  <script src="dist/beer-list/scripts.js"></script>
+  <script src="dist/beer-list/main.js"></script>
+
+</head>
+<body id="page-top">
+
+  <app-beer-list title="Do you want a beer?"></app-beer-list>
+
+  <script>
+    const button = document.querySelector('app-beer-list');
+    button.addEventListener('action', (event) => {
+      button.title = "Yuo got a beer!";
+      console.log(`"action" emitted: ${event.detail}`);
+    });
+  </script>
+
+</body>
+</html>

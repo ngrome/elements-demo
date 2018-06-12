@@ -9,9 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "package": "cat dist/beer-list/{runtime,polyfills,scripts,main}.js | gzip > elements.js.gz",
-    "serve": "http-server --gzip",
-    "serveprod": "ng serve --aot --prod"
-
+    "serve": "http-server --gzip"
   },
   "private": true,
   "dependencies": {

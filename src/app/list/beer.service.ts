@@ -6,9 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BeerService {
 
-  constructor(private http:HttpClient) {
-    console.log('BeerService constructor');
-  }
+  constructor(private http:HttpClient) {}
 
   getBeerList(){
     console.log('BeerService getBeerList');

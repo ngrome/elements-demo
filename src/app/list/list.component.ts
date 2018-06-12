@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter, HostListener } from '@angular/core';
 import { BeerService } from './beer.service';
 import { Observable } from 'rxjs';
 
@@ -13,10 +13,13 @@ export class ListComponent implements OnInit {
   @Input()
   title: string;
 
+  @Input()
+  BeerService:Observable<any>;
+  beerList;
+  beerListData;
+
   @Output()
   public action = new EventEmitter<boolean>();
-
-  beerList;
 
   constructor(private beerService: BeerService) {}
 
@@ -24,11 +27,12 @@ export class ListComponent implements OnInit {
     console.log('ListComponent: ngOnInit');
     this.beerService.getBeerList().subscribe(data => {
       console.log('ListComponent: subscribe of getBeerList()', data);
-      this.beerList = data;
+      this.beerListData = data;
     });
   }
 
   onGiveMeABeer(){
+    this.beerList = this.beerListData;
     this.action.emit(true);
   }
 
